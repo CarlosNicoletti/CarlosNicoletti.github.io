@@ -161,7 +161,7 @@ a {
   color: var(--texto);
 }
 
-.digitando {
+.destaque-texto {
   color: var(--destaque);
   font-weight: 600;
 }
