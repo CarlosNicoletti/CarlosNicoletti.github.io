@@ -326,7 +326,36 @@ a {
 .contato p {
   color: var(--texto-suave);
 }
+/* Linha do tempo da jornada */
+.jornada {
+  list-style: none;
+  border-left: 2px solid var(--borda);
+  padding-left: 24px;
+  display: grid;
+  gap: 24px;
+  max-width: 720px;
+}
 
+.jornada li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.jornada li::before {
+  content: "";
+  position: absolute;
+  left: -31px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--destaque);
+}
+
+.jornada span {
+  color: var(--texto-suave);
+}
 /* =========================================================
    RODAPÉ
    ========================================================= */
