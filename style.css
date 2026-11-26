@@ -244,8 +244,9 @@ a {
 
 .sobre-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 720px;
   color: var(--texto-suave);
   font-size: 1.05rem;
 }
