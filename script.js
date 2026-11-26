@@ -47,49 +47,6 @@ menu.querySelectorAll("a").forEach((link) => {
 });
 
 // =========================================================
-// 3. EFEITO DE DIGITAÇÃO
-// Escreve e apaga as frases, uma letra por vez.
-// =========================================================
-const frases = [
-  "Desenvolvimento Web",
-  "Python e Dados",
-  "Automação",
-  "Sempre aprendendo 🚀",
-];
-
-const elementoDigitando = document.getElementById("digitando");
-let indiceFrase = 0;
-let indiceLetra = 0;
-let apagando = false;
-
-function digitar() {
-  const fraseAtual = frases[indiceFrase];
-
-  if (apagando) {
-    indiceLetra--;
-  } else {
-    indiceLetra++;
-  }
-
-  elementoDigitando.textContent = fraseAtual.slice(0, indiceLetra);
-
-  let espera = apagando ? 50 : 100;
-
-  if (!apagando && indiceLetra === fraseAtual.length) {
-    espera = 1800; // pausa com a frase completa
-    apagando = true;
-  } else if (apagando && indiceLetra === 0) {
-    apagando = false;
-    indiceFrase = (indiceFrase + 1) % frases.length; // próxima frase
-    espera = 400;
-  }
-
-  setTimeout(digitar, espera);
-}
-
-digitar();
-
-// =========================================================
 // 4. ANIMAÇÃO AO ROLAR
 // Mostra cada seção suavemente quando ela entra na tela.
 // =========================================================
