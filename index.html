@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Nicoletti | Portfólio</title>
+  <meta name="description" content="Portfólio de Carlos Nicoletti, estudante de Análise e Desenvolvimento de Sistemas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== CABEÇALHO / MENU ===== -->
+  <header class="cabecalho">
+    <nav class="nav container">
+      <a href="#inicio" class="logo">CN<span>.</span></a>
+
+      <button class="menu-botao" id="menuBotao" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="menu" id="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li>
+          <button class="tema-botao" id="temaBotao" aria-label="Alternar tema claro/escuro">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== INÍCIO ===== -->
+    <section class="inicio container" id="inicio">
+      <div class="inicio-texto">
+        <p class="saudacao">Olá, eu sou</p>
+        <h1>Carlos Nicoletti</h1>
+        <p class="cargo">
+          Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong><br>
+          <span id="digitando" class="digitando"></span><span class="cursor">|</span>
+        </p>
+        <div class="botoes">
+          <a href="#projetos" class="botao botao-principal">Ver projetos</a>
+          <a href="https://github.com/CarlosNicoletti" target="_blank" rel="noopener" class="botao botao-secundario">GitHub</a>
+        </div>
+      </div>
+      <img class="foto" src="https://github.com/CarlosNicoletti.png" alt="Foto de Carlos Nicoletti" width="260" height="260">
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="secao container" id="sobre">
+      <h2 class="titulo-secao">Sobre mim</h2>
+      <div class="sobre-grid">
+        <p>
+          Estou em transição de carreira para a área de tecnologia. Venho da logística,
+          onde desenvolvi organização, visão de processos e foco em resultados,
+          habilidades que levo para o desenvolvimento de software.
+        </p>
+        <p>
+          Hoje estou construindo uma base sólida em programação e quero explorar as diversas
+          áreas da tecnologia: desenvolvimento web, back-end, dados e automação.
+          Gosto de aprender na prática, e este site é um dos meus primeiros projetos.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section class="secao container" id="habilidades">
+      <h2 class="titulo-secao">Habilidades</h2>
+      <div class="cards-habilidades">
+        <div class="card-habilidade">
+          <h3>Front-end</h3>
+          <ul class="tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="card-habilidade">
+          <h3>Back-end e Dados</h3>
+          <ul class="tags">
+            <li>Python</li><li>SQL</li>
+          </ul>
+        </div>
+        <div class="card-habilidade">
+          <h3>Ferramentas</h3>
+          <ul class="tags">
+            <li>Git</li><li>GitHub</li><li>VS Code</li>
+          </ul>
+        </div>
+        <div class="card-habilidade">
+          <h3>Comportamentais</h3>
+          <ul class="tags">
+            <li>Organização</li><li>Visão de processos</li><li>Trabalho em equipe</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section class="secao container" id="projetos">
+      <h2 class="titulo-secao">Projetos</h2>
+      <div class="cards-projetos">
+
+        <article class="card-projeto">
+          <h3>Portfólio pessoal</h3>
+          <p>Este site! Página responsiva com tema claro e escuro, menu para celular e efeito de digitação.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <a href="https://github.com/CarlosNicoletti/CarlosNicoletti.github.io" target="_blank" rel="noopener" class="link-projeto">Ver código →</a>
+        </article>
+
+        <article class="card-projeto">
+          <h3>Estudos ADS</h3>
+          <p>Repositório onde registro anotações, exercícios e pequenos projetos de cada disciplina do curso.</p>
+          <ul class="tags"><li>Git</li><li>Markdown</li></ul>
+          <a href="https://github.com/CarlosNicoletti/estudos-ads" target="_blank" rel="noopener" class="link-projeto">Ver repositório →</a>
+        </article>
+
+        <article class="card-projeto card-em-breve">
+          <h3>Próximo projeto</h3>
+          <p>Em construção: novos projetos em Python, dados e desenvolvimento web chegando em breve.</p>
+          <ul class="tags"><li>Em breve</li></ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="secao container contato" id="contato">
+      <h2 class="titulo-secao">Contato</h2>
+      <p>Quer conversar sobre tecnologia, estudos ou oportunidades? Me encontre por aqui:</p>
+      <div class="botoes">
+        <a href="https://github.com/CarlosNicoletti" target="_blank" rel="noopener" class="botao botao-principal">GitHub</a>
+        <!-- Quando o LinkedIn estiver pronto, troque o link abaixo e remova o comentário:
+        <a href="https://www.linkedin.com/in/SEU-LINKEDIN" target="_blank" rel="noopener" class="botao botao-secundario">LinkedIn</a>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© <span id="ano"></span> Carlos Nicoletti · Feito com HTML, CSS e JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
